@@ -126,3 +126,5 @@ while jogando:
             space_pressed = False
             jogando = True
             Menu = False
+# ===== Finalização =====
+pygame.quit()  # Função do PyGame que finaliza os recursos utilizados
