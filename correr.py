@@ -19,20 +19,20 @@ while correndo:
             correndo = False
 
         
-    tela.fill(verde)
+    main.tela.fill(main.verde)
 
-    pygame.draw.rect(tela, cinza, rua)
+    pygame.draw.rect(main.tela, main.cinza, main.rua)
 
-    pygame.draw.rect(tela, amar, borda_esquerda)
-    pygame.draw.rect(tela, amar, borda_direita)
+    pygame.draw.rect(main.tela, main.amar, main.borda_esquerda)
+    pygame.draw.rect(main.tela, main.amar, main.borda_direita)
 
     marcador_faixa_y += vel
-    if marcador_faixa_y >= marcador_altura * 2:
+    if marcador_faixa_y >= main.marcador_altura * 2:
         marcador_faixa_y = 0
 
-    for y in range(marcador_altura * -2, height, marcador_altura*2):
-        pygame.draw.rect(tela, branco, (via_esq + 45, y + marcador_faixa_y, marcador_largura, marcador_altura))
-        pygame.draw.rect(tela,branco, ((via_meio + 45, y + marcador_faixa_y, marcador_largura, marcador_altura)))
-        pygame.draw.rect(tela,branco, ((via_dir + 45, y + marcador_faixa_y, marcador_largura, marcador_altura)))
+    for y in range(main.marcador_altura * -2, main.height, main.marcador_altura*2):
+        pygame.draw.rect(main.tela, main.branco, (main.via_esq + 45, y + marcador_faixa_y, main.marcador_largura, main.marcador_altura))
+        pygame.draw.rect(main.tela,main.branco, ((main.via_meio + 45, y + marcador_faixa_y, main.marcador_largura, main.marcador_altura)))
+        pygame.draw.rect(main.tela,main.branco, ((main.via_dir + 45, y + marcador_faixa_y, main.marcador_largura, main.marcador_altura)))
 
     pygame.display.update()
