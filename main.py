@@ -23,3 +23,10 @@ rua = (100, 0, 300, height)
 borda_esquerda = (95, 0, marcador_largura, height)
 borda_direita = (395, 0, marcador_largura, height)
 
+faixa_esq = 150
+faixa_meio = 250
+faixa_dir = 350
+
+faixas = [faixa_esq, faixa_meio, faixa_dir]
+
+marcador_faixa_y = 0
