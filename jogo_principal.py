@@ -161,7 +161,7 @@ class Vehicle(pygame.sprite.Sprite):
 class PlayerVehicle(Vehicle):
     
     def __init__(self, x, y):
-        image = pygame.image.load('assets/carro-principal.png').convert_alpha()
+        image = pygame.image.load('assets/carro-jogador.png').convert_alpha()
         super().__init__(image, x, y)
         
 # Grupo de sprites
