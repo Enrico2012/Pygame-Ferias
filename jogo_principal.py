@@ -161,7 +161,7 @@ class Vehicle(pygame.sprite.Sprite):
 class PlayerVehicle(Vehicle):
     
     def __init__(self, x, y):
-        image = pygame.image.load('assets/Captura de tela 2023-08-01 083829.png').convert_alpha()
+        image = pygame.image.load('assets/Carro.png').convert_alpha()
         super().__init__(image, x, y)
         
 # Grupo de sprites
@@ -173,7 +173,7 @@ jog = PlayerVehicle(jog_x, jog_y)
 grupo_jogador.add(jog)
 
 # Imagem dos carros
-imagens = ['assets/car-top-view-vector-11835175.jpg', 'assets/depositphotos_116291144-stock-illustration-racing-car-vector-illustration.jpg']
+imagens = ['assets/carro3-removebg-preview.png', 'assets/carro2-removebg-preview.png']
 veiculos = []
 for image_filename in imagens:
     image = pygame.image.load(image_filename)
@@ -181,7 +181,7 @@ for image_filename in imagens:
     
 
 # Batida
-batida = pygame.image.load('assets/crash.png').convert_alpha()
+batida = pygame.image.load('assets/crash-removebg-preview.png').convert_alpha()
 batida_rect = batida.get_rect()
 
 
